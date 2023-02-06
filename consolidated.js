@@ -1,3 +1,5 @@
+
+
 const products = [
     {
         id:1,
@@ -35,10 +37,32 @@ const products = [
     },
   ]
    
+
   const selectFavorateButtonIds=[];
   
 
   const productsElement = document.getElementById("products")
+
+  // let productsModified=""
+
+// fetch("http://localhost:3000/products")
+// .then(function(res){
+//   return res.json();
+// })
+// .then(function(res){
+//   //console.log(res)
+//    productsModified = res.map(function (product) {
+//     product.priceModified = product.price.toFixed(2)
+//     return product
+//   })
+//   renderProductCards(productsModified)
+// })
+// .catch(function(err){
+//   console.log("Iam Error Message")
+// })
+// .finally(function(){
+//   console.log("Iam excuted even if request success or not")
+// })
   
   const productsModified = products.map(function (product) {
     product.priceModified = product.price.toFixed(2)

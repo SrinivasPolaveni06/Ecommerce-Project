@@ -9,4 +9,4 @@ const search$=document.getElementById("search");
     })
 
     renderProductCards(modifiedProductsList);
-  })
+  });

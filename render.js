@@ -3,11 +3,7 @@ const selectFavorateButtonIds=[];
 
   const productsElement = document.getElementById("products")
   
-  const productsModified = products.map(function (product) {
-    product.priceModified = product.price.toFixed(2)
-    return product
-  })
-  renderProductCards(productsModified)
+  
   
   function renderProductCards(products) {
     let productCards = ""
@@ -48,7 +44,7 @@ const selectFavorateButtonIds=[];
                 shopping_cart_checkout
               </span>
             </button>
-            <button type="button" class="btn btn-favorate" data-id="${product.id}">
+            <button type="button" class="btn btn-favorate" data-id="${product._id}">
               <span class="material-icons-outlined"> favorite_border </span>
             </button>
             <button type="button" class="btn">
